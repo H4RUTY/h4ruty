@@ -22,5 +22,3 @@
                            .  .    +                           - o -                          --o--
                                                                  |                              |
 ```
-
-![rocket](./rocket.gif)
