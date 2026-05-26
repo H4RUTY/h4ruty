@@ -35,14 +35,13 @@ set smartcase
 set hlsearch
 set incsearch
 
-" === Keymaps ===
+" === Remaps ===
 let mapleader = "\<Space>"
 nnoremap <CR> :nohlsearch<CR>
 nnoremap <Leader>t :lcd %:p:h \| :terminal<CR>
 nnoremap <Leader>f :Ex<CR>
 nnoremap <Leader>d "_d
 
-" Resize Window
 nmap <C-w>-    <C-w>-<SID>ws
 nmap <C-w>+    <C-w>+<SID>ws
 nmap <C-w><lt> <C-w><lt><SID>ws
