@@ -12,7 +12,7 @@ set clipboard=unnamed
 
 " === UI ===
 syntax on
-colorscheme habamax
+colo sorbet
 set number
 set relativenumber
 set scrolloff=8
