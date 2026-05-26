@@ -10,6 +10,7 @@ set clipboard=unnamed
 
 " === UI ===
 syntax on
+colorscheme habamax
 set number
 set relativenumber
 set scrolloff=8
@@ -40,14 +41,17 @@ nnoremap <CR> :nohlsearch<CR>
 nnoremap <Leader>t :lcd %:p:h \| :terminal<CR>
 nnoremap <Leader>f :Ex<CR>
 nnoremap <Leader>d "_d
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-tnoremap <C-h> <C-w>h
-tnoremap <C-j> <C-w>j
-tnoremap <C-k> <C-w>k
-tnoremap <C-l> <C-w>l
+
+" Resize Window
+nmap <C-w>-    <C-w>-<SID>ws
+nmap <C-w>+    <C-w>+<SID>ws
+nmap <C-w><lt> <C-w><lt><SID>ws
+nmap <C-w>>    <C-w>><SID>ws
+nmap <SID>ws <Nop>
+nnoremap <script> <SID>ws-    <C-w>-<SID>ws
+nnoremap <script> <SID>ws+    <C-w>+<SID>ws
+nnoremap <script> <SID>ws<lt> <C-w><lt><SID>ws
+nnoremap <script> <SID>ws>    <C-w>><SID>ws
 
 " === Autocmd ===
 autocmd BufWritePre * :%s/\(\S\)\s\+$/\1/e
