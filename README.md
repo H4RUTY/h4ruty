@@ -1,3 +1,5 @@
+here is my `.vimrc`:
+
 ```vim
 " === General ===
 set encoding=utf-8
