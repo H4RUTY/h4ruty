@@ -18,6 +18,7 @@ set relativenumber
 set scrolloff=8
 set showcmd
 set wildmenu
+set nowrap
 set laststatus=2
 set list
 set listchars=tab:»\ ,trail:·
