@@ -40,20 +40,10 @@ set incsearch
 
 " === Remaps ===
 let mapleader = "\<Space>"
-nnoremap <CR> :nohlsearch<CR>
+nnoremap <Leader><CR> :nohlsearch<CR>
 nnoremap <Leader>t :lcd %:p:h \| :terminal<CR>
 nnoremap <Leader>f :Ex<CR>
 nnoremap <Leader>d "_d
-
-nmap <C-w>-    <C-w>-<SID>ws
-nmap <C-w>+    <C-w>+<SID>ws
-nmap <C-w><lt> <C-w><lt><SID>ws
-nmap <C-w>>    <C-w>><SID>ws
-nmap <SID>ws <Nop>
-nnoremap <script> <SID>ws-    <C-w>-<SID>ws
-nnoremap <script> <SID>ws+    <C-w>+<SID>ws
-nnoremap <script> <SID>ws<lt> <C-w><lt><SID>ws
-nnoremap <script> <SID>ws>    <C-w>><SID>ws
 
 " === Autocmd ===
 autocmd BufWritePre * :%s/\(\S\)\s\+$/\1/e
