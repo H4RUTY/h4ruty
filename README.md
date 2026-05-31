@@ -47,5 +47,9 @@ nnoremap <Leader>d "_d
 nnoremap c "_c
 
 " === Autocmd ===
-autocmd BufWritePre * :%s/\(\S\)\s\+$/\1/e
+augroup trim_space_group
+    autocmd!
+    autocmd BufWritePre * if &filetype != 'markdown' | silent! %s/\s\+$//e | endif
+    autocmd BufWritePre *.md silent! %s/\(\S\)\s\+$/\1/e
+augroup END
 ```
