@@ -12,7 +12,6 @@ set clipboard=unnamed
 
 " === UI ===
 syntax on
-colo sorbet
 set number
 set relativenumber
 set scrolloff=8
