@@ -44,6 +44,7 @@ nnoremap <Leader><CR> :nohlsearch<CR>
 nnoremap <Leader>t :lcd %:p:h \| :terminal<CR>
 nnoremap <Leader>f :Ex<CR>
 nnoremap <Leader>d "_d
+nnoremap c "_c
 
 " === Autocmd ===
 autocmd BufWritePre * :%s/\(\S\)\s\+$/\1/e
