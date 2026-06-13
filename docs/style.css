@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family:"Times New Roman", serif;
     background-color: #ddd;
     width: 100vw;
     margin: 0;
@@ -123,3 +123,12 @@ header {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.hero {
+    font-family: "Libre Caslon Display", "Times New Roman", serif;
+    letter-spacing: -0.04em;
+    font-size: clamp(2.25rem, 1.795rem + 2.27vw, 3.5rem);
+    width: 100%;
+    text-align: center;
+}
+
